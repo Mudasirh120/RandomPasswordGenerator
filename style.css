@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #09216e;
+  color: #fff;
+  height: 100vh;
+}
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem 8rem;
+}
+.text-area,
+.app-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.text-area {
+  padding-right: 8rem;
+}
+
+.tagline {
+  font-size: 6.8rem;
+}
+.text {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.app {
+  color: #333;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 75%;
+  padding: 2rem 3rem;
+}
+.label {
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-right: 4rem;
+  color: #777;
+}
+#range {
+  width: 25rem;
+}
+#value {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: 0.1px solid #aaa;
+  /* border: none; */
+}
+#value:focus {
+  border: 0.1px solid #aaa;
+  outline: none;
+}
+#value:active {
+  border: 0.1px solid #aaa;
+}
+#value:out-of-range {
+  border: 0.1px solid red;
+}
+.pass-box {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1px solid #777;
+  border-radius: 10px;
+}
+button {
+  background-color: #09216e;
+  color: #fff;
+  border: none;
+  padding: 1.4rem 2rem;
+  border-radius: 10px;
+}
+.btn-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
