@@ -11,8 +11,8 @@
       <section class="section-hero">
         <div class="text-area">
           <h1 class="tagline">
-            Strong.<br />
-            Secure.<br />
+            Strong,<br />
+            Secure,<br />
             Protected.
           </h1>
           <h2 class="text">
@@ -24,45 +24,42 @@
           <div class="app">
             <h2 class="text">Customize Your Password</h2>
             <hr />
-            <p>
+            <p class="label-length">
               <span class="label">Length</span>
               <input
                 id="range"
                 type="range"
                 min="8"
-                max="48"
+                max="36"
                 value="8"
                 form="value"
               />
-              <input type="value" min="8" max="48" value="8" id="value" />
+              <input type="value" min="8" max="36" value="8" id="value" />
             </p>
-
-            <p>
-              <span class="label">Include numbers</span>
-              <input type="checkbox" id="checkbox" />
-            </p>
-            <p>
-              <span class="label">Include symbols</span>
-              <input type="checkbox" id="checkbox" />
-            </p>
-            <p>
+            <p class="label-low">
               <span class="label">Include lowercase letters</span>
-              <input type="checkbox" id="checkbox" />
+              <input type="checkbox" checked class="checkbox low" />
             </p>
-            <p>
+            <p class="label-num">
+              <span class="label">Include numbers</span>
+              <input type="checkbox" class="checkbox num" />
+            </p>
+            <p class="label-sym">
+              <span class="label">Include symbols</span>
+              <input type="checkbox" class="checkbox sym" />
+            </p>
+            <p class="label-upp">
               <span class="label">Include uppercase letters</span>
-              <input type="checkbox" id="checkbox" />
+              <input type="checkbox" class="checkbox upp" />
             </p>
             <hr />
             <p class="label">Generated Password</p>
             <div class="pass-box">
-              <p class="password">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
+              <p class="password">"Protect data with strong password."</p>
             </div>
             <div class="btn-box">
-              <button>Copy Password</button>
-              <button>Generate Password</button>
+              <button class="copy">Copy Password</button>
+              <button class="generate">Generate Password</button>
             </div>
           </div>
         </div>

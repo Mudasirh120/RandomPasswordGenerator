@@ -9,16 +9,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
+  margin: 0 auto;
   overflow: hidden;
   background-color: #09216e;
   color: #fff;
   height: 100vh;
 }
 .section-hero {
+  height: 80vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 4rem 8rem;
+  grid-template-columns: 1fr 1.4fr;
+  padding: 1.6rem 8rem;
 }
 .text-area,
 .app-area {
@@ -45,6 +46,10 @@ body {
   width: 75%;
   padding: 2rem 3rem;
 }
+.label-length {
+  display: flex;
+  align-items: center;
+}
 .label {
   font-weight: 400;
   font-size: 2.4rem;
@@ -53,12 +58,16 @@ body {
 }
 #range {
   width: 25rem;
+  height: 0.5rem;
 }
 #value {
-  width: 4rem;
+  width: 3rem;
   height: 2rem;
   border-radius: 10px;
   border: 0.1px solid #aaa;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  align-content: center;
   /* border: none; */
 }
 #value:focus {
@@ -71,6 +80,22 @@ body {
 #value:out-of-range {
   border: 0.1px solid red;
 }
+.checkbox {
+  width: 3rem;
+  height: 2rem;
+}
+.num {
+  margin-left: 15.5rem;
+}
+.sym {
+  margin-left: 16.25rem;
+}
+.low {
+  margin-left: 6.1rem;
+}
+.upp {
+  margin-left: 5.4rem;
+}
 .pass-box {
   padding: 2rem 0;
   margin: 2rem 0;
@@ -81,14 +106,23 @@ body {
   border-radius: 10px;
 }
 button {
-  background-color: #09216e;
+  background-color: #0075ff;
   color: #fff;
   border: none;
   padding: 1.4rem 2rem;
   border-radius: 10px;
 }
+.copy:hover,
+.generate:hover {
+  scale: 1.1;
+}
 .btn-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+.password {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgba(128, 128, 128, 0.4);
 }
