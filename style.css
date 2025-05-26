@@ -9,29 +9,28 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: 0 auto;
-  overflow: hidden;
   background-color: #09216e;
   color: #fff;
-  height: 100vh;
+  width: 100%;
 }
 .section-hero {
-  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  padding: 1.6rem 8rem;
+  grid-template-columns: 1fr 1fr;
 }
 .text-area,
 .app-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
 }
 .text-area {
-  padding-right: 8rem;
+  padding-right: 10rem;
 }
-
+.app-area {
+  padding-top: 1rem;
+}
 .tagline {
   font-size: 6.8rem;
 }
@@ -125,4 +124,7 @@ button {
   font-weight: bold;
   font-size: 2rem;
   color: rgba(128, 128, 128, 0.4);
+}
+.valid {
+  color: #0075ff;
 }

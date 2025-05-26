@@ -10,11 +10,7 @@
     <main>
       <section class="section-hero">
         <div class="text-area">
-          <h1 class="tagline">
-            Strong,<br />
-            Secure,<br />
-            Protected.
-          </h1>
+          <h1 class="tagline">Strong, Secure, Protected.</h1>
           <h2 class="text">
             Try our Random Password Generator to create ultra-secure,
             unbreakable passwords that protect your digital life.
@@ -30,29 +26,36 @@
                 id="range"
                 type="range"
                 min="8"
-                max="36"
+                max="32"
                 value="8"
                 form="value"
+                class="dependency"
               />
-              <input type="value" min="8" max="36" value="8" id="value" />
+              <input
+                type="value"
+                min="8"
+                max="36"
+                value="8"
+                id="value"
+                class="dependency"
+              />
             </p>
             <p class="label-low">
               <span class="label">Include lowercase letters</span>
-              <input type="checkbox" checked class="checkbox low" />
+              <input type="checkbox" checked class="checkbox low dependency" />
             </p>
             <p class="label-upp">
               <span class="label">Include uppercase letters</span>
-              <input type="checkbox" class="checkbox upp" />
+              <input type="checkbox" class="checkbox upp dependency" />
             </p>
             <p class="label-num">
               <span class="label">Include numbers</span>
-              <input type="checkbox" class="checkbox num" />
+              <input type="checkbox" class="checkbox num dependency" />
             </p>
             <p class="label-sym">
               <span class="label">Include symbols</span>
-              <input type="checkbox" class="checkbox sym" />
+              <input type="checkbox" class="checkbox sym dependency" />
             </p>
-
             <hr />
             <p class="label">Generated Password</p>
             <div class="pass-box">

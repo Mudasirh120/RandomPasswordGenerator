@@ -8,6 +8,7 @@ const lower = document.querySelector(".low");
 const upper = document.querySelector(".upp");
 const number = document.querySelector(".num");
 const symbol = document.querySelector(".sym");
+const dependencies = document.querySelectorAll(".dependency");
 let generatedPassword = "";
 const characters = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
@@ -15,6 +16,7 @@ const characters = {
   numbers: "0123456789",
   symbols: "~!@#$%^&*()_+[]{}|;:,.<>?",
 };
+
 const password = {};
 let options = [];
 slider.addEventListener("change", () => {
@@ -66,9 +68,12 @@ function generatePassword() {
       generatedPassword += randomCharacter;
     }
     generated.textContent = generatedPassword;
-    generated.style.color = "#0075ff";
+    generated.classList.toggle("valid", true);
+    // generated.style.color = "#0075ff";
   } else {
     generated.textContent = defaultText;
+    generated.classList.toggle("valid", false);
+    alert("Please Select at least one option!");
   }
 }
 copy.addEventListener("click", () => {
@@ -92,6 +97,9 @@ copy.addEventListener("click", () => {
 generate.addEventListener("click", () => {
   generatePassword();
 });
-copy.addEventListener("mouseover", () => {
-  copy.style.cursor = "pointer";
+generatePassword();
+dependencies.forEach((dependency) => {
+  dependency.addEventListener("change", () => {
+    generatePassword();
+  });
 });
